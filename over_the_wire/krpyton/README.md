@@ -5,92 +5,11 @@
 ##Krpyton
 [krpyton](http://overthewire.org/wargames/krypton/)
 
-===
-### Level 0
-####Problem
-decode base64:
-```
-S1JZUFRPTklTR1JFQVQ=
-```
 
-#### Solution
-level0.py
-```python
-print "S1JZUFRPTklTR1JFQVQ=".decode("base64")
-```
-
-#### Flag
-```
-KRYPTONISGREAT
-```
-
-===
-### Level 1
-
-#### Problem
-```
-YRIRY GJB CNFFJBEQ EBGGRA
-```
-
-#### Solution
-
-In README
-"It is 'encrypted' using a simple rotation called ROT13."
-
-```python
-"YRIRY GJB CNFFJBEQ EBGGRA".encode('ROT13')
-```
-
-#### Flag
-
-```
-LEVEL TWO PASSWORD ROTTEN
-```
-
-===
-### Level 2
-
-#### Problem
-```
-OMQEMDUEQMEK
-```
-
-#### Solution
-
-Caesar
-
-```python
-class Caesar(object):
-    
-    def __init__(self, plain):
-        self.plain = plain
-        self.alphabet_L = list('abcdefghijklmnopqrstuvwxyz')
-        self.alphabet_U = list('ABCDEFGHIJKLMNOPQRSTUVWXYZ')
-        
-    def rot(self, c):
-        if c in self.alphabet_L:
-            return self.alphabet_L[(self.alphabet_L.index(c)+self.index)%(len(self.alphabet_U))]
-        if c in self.alphabet_U:
-            return self.alphabet_U[(self.alphabet_U.index(c)+self.index)%(len(self.alphabet_L))]
-        
-        return c
-        
-    def encode(self, rot):
-        self.index = rot
-        l = list(self.plain)
-        m = map(self.rot,l)    
-        return ''.join(e for e in m)
-
-def main():
-    m = "OMQEMDUEQMEK"
-    for x in range(1, 26):
-        print str(x) + ": " + Caesar(m).encode(x) +"\n"
-
-main()
-```
-
-#### Flag
-
-```
-CAESARISEASY
-```
+- [x] krypton0
+- [x] krypton1
+- [x] krypton2
+- [ ] krypton3
+- [ ] krypton4
+- [ ] krypton5
+- [ ] krypton6
