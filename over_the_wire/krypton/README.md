@@ -10,6 +10,6 @@
 - [x] krypton1
 - [x] krypton2
 - [x] krypton3
-- [ ] krypton4
-- [ ] krypton5
+- [x] krypton4
+- [x] krypton5
 - [ ] krypton6
