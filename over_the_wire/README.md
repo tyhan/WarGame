@@ -1,4 +1,4 @@
-#[Overthewire](http://overthewire.org/wargames/)
+#[Over the wire](http://overthewire.org/wargames/)
 
 ### Writing
 ####[Bandit](http://overthewire.org/wargames/bandit/)
