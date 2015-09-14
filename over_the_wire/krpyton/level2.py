@@ -1,65 +1,3 @@
-##WriteUp
-#Over the wire
-[Over the wire](http://overthewire.org/wargames/)
-
-##Krpyton
-[krpyton](http://overthewire.org/wargames/krypton/)
-
-===
-### Level 0
-####Problem
-decode base64:
-```
-S1JZUFRPTklTR1JFQVQ=
-```
-
-#### Solution
-level0.py
-```python
-print "S1JZUFRPTklTR1JFQVQ=".decode("base64")
-```
-
-#### Flag
-```
-KRYPTONISGREAT
-```
-
-===
-### Level 1
-
-#### Problem
-```
-YRIRY GJB CNFFJBEQ EBGGRA
-```
-
-#### Solution
-
-In README
-"It is 'encrypted' using a simple rotation called ROT13."
-
-```python
-"YRIRY GJB CNFFJBEQ EBGGRA".encode('ROT13')
-```
-
-#### Flag
-
-```
-LEVEL TWO PASSWORD ROTTEN
-```
-
-===
-### Level 2
-
-#### Problem
-```
-OMQEMDUEQMEK
-```
-
-#### Solution
-
-Caesar
-
-```python
 class Caesar(object):
     
     def __init__(self, plain):
@@ -87,10 +25,3 @@ def main():
         print str(x) + ": " + Caesar(m).encode(x) +"\n"
 
 main()
-```
-
-#### Flag
-
-```
-CAESARISEASY
-```
