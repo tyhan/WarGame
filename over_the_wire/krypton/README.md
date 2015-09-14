@@ -2,8 +2,8 @@
 #Over the wire
 [Over the wire](http://overthewire.org/wargames/)
 
-##Krpyton
-[krpyton](http://overthewire.org/wargames/krypton/)
+##Krypton
+[krypton](http://overthewire.org/wargames/krypton/)
 
 
 - [x] krypton0
