@@ -17,7 +17,6 @@ decode base64:
 level0.py
 
 <code>#!/usr/local/bin/python
-
 print "S1JZUFRPTklTR1JFQVQ=".decode("base64")
 </code>
 
@@ -39,7 +38,6 @@ In README
 "It is 'encrypted' using a simple rotation called ROT13."
 
 <code>#!/usr/local/bin/python
-
 "YRIRY GJB CNFFJBEQ EBGGRA".encode('ROT13')
 </code>
 
