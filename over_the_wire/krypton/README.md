@@ -9,7 +9,7 @@
 - [x] krypton0
 - [x] krypton1
 - [x] krypton2
-- [ ] krypton3
+- [x] krypton3
 - [ ] krypton4
 - [ ] krypton5
 - [ ] krypton6
