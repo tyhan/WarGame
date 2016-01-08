@@ -29,4 +29,5 @@ func main(){
 	problem.Dragon(phpsession)
 	problem.Iron_golem(phpsession)
 	problem.Dark_eyes(phpsession)
+	problem.Umaru(phpsession)
 }
