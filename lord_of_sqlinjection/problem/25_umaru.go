@@ -25,7 +25,7 @@ func find_pw9(file string, length int, session string)string{
 			contents := connect(file, param, session)
 		        t1 := time.Now()
 			
-			if t1.Sub(t0) > (time.Millisecond * 1300){
+			if t1.Sub(t0) > (time.Millisecond * 1000){
 				result += string(hex_str[j])
 				if(string(contents) != ""){
 					fmt.Print("")
